@@ -1,4 +1,4 @@
-;Ctrl+Shift+Q, W, E, R, T or Y locks selection for a certain hero (1st to 6th one)
+;Ctrl+Shift+Q, W, E, R, T, Y, U or I locks selection for a certain hero (1st to 6th one)
 ;Windows + B Breaks the loops
 
 global break_loop = 0 
@@ -78,6 +78,32 @@ break_loop = 0
 Loop
 {
   MouseMove, 1480, 1157, 0
+  Click 2
+  if( break_loop = 1)
+  {
+    Return
+  }
+}
+return
+; Seventh Hero
+^+u::
+break_loop = 0
+Loop
+{
+  MouseMove, 1625, 1012, 0
+  Click 2
+  if( break_loop = 1)
+  {
+    Return
+  }
+}
+return
+; Eighth Hero
+^+i::
+break_loop = 0
+Loop
+{
+  MouseMove, 1617, 1152, 0
   Click 2
   if( break_loop = 1)
   {
